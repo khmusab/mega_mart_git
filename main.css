@@ -1,0 +1,334 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Prompt;
+  text-decoration: none !important;
+  list-style: none;
+}
+
+.location {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+  background: rgb(245, 245, 245);
+  align-items: center;
+  padding: 0 5%;
+}
+.location p {
+  margin: auto 0;
+}
+.location ul {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin: auto 0;
+  gap: 30px;
+}
+
+.container nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+  align-items: center;
+}
+.container nav .search {
+  position: relative;
+  width: 40%;
+}
+.container nav .search input {
+  border-radius: 10px;
+  height: 48px;
+  padding: 5px 40px 5px 40px;
+  outline: none;
+  border: none;
+  width: 100%;
+  background: rgb(243, 249, 251);
+}
+.container nav .search img {
+  position: absolute;
+}
+.container nav .search img:nth-child(1) {
+  left: 10px;
+  top: 30%;
+}
+.container nav .search img:nth-child(3) {
+  top: 25%;
+  right: 10px;
+}
+.container nav .actions {
+  display: flex;
+  gap: 30px;
+}
+.container nav .actions a {
+  font-weight: 600;
+  color: #666;
+}
+.container .category {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 50px;
+  padding: 0 !important;
+  justify-content: space-between;
+}
+.container .category li {
+  padding: 6px 14px;
+  transition: 0.5s;
+  border-radius: 30px;
+  background-color: #f3f9fb;
+}
+.container .category li:hover {
+  background: rgb(0, 142, 204);
+  color: white;
+}
+.container .carousel-item {
+  width: 100%;
+  transition: 0.7;
+  height: 315px;
+  background-color: red;
+}
+.container .carousel-item img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.container .carousel-inner {
+  border-radius: 20px;
+}
+.container .phone-list {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+}
+.container .phones {
+  margin: 70px 0;
+  width: 100%;
+}
+.container .phones .title {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.container .phones .title h3 {
+  font-size: 24px;
+}
+.container .phones .title span {
+  font-size: 24px;
+  color: color #008ecc;
+}
+.container .phones .line {
+  width: 100%;
+  margin: 30px 0;
+  height: 3px;
+  background-color: lightgray;
+}
+.container .phones .line div {
+  width: 35%;
+  height: 100%;
+  background-color: #008ecc;
+}
+.container .phones .card-phone {
+  box-shadow: 0 0 1px gray;
+  width: 18%;
+  transform: 0.3s;
+  border-radius: 15px;
+  border: 1px solid transparent;
+}
+.container .phones .card-phone:hover {
+  box-shadow: 0 5px 10px lightgray;
+  border: 1px solid;
+}
+.container .phones .card-phone .card-img {
+  width: 100%;
+  text-align: center;
+  height: 60%;
+  position: relative;
+}
+.container .phones .card-phone .card-img img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 70%;
+  height: 70%;
+}
+.container .phones .card-phone .card-img img:nth-child(2) {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 0;
+  right: 0;
+}
+.container .phones .card-phone .card-price {
+  padding: 0 15px;
+  width: 100%;
+  height: 40%;
+}
+.container .phones .card-phone .card-price h4 {
+  font-size: 18px;
+}
+.container .phones .circle-card {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+.container .phones .circle-card img {
+  width: 130px;
+  height: 130px;
+}
+.container .phones .circle-card:hover img {
+  border-radius: 50%;
+  border: 1px solid #008ecc;
+}
+.container .phones .store-card {
+  align-items: center;
+  width: 30%;
+}
+.container .phones .store-card img {
+  width: 100%;
+  height: auto;
+}
+.container .phones .fruit {
+  width: 15%;
+  text-align: center;
+}
+.container .phones .fruit .fruit-img {
+  border: 1px soid transparent;
+  width: 100%;
+  padding: 10%;
+  transition: 0.5s;
+  height: 200px;
+  display: flex;
+  border-radius: 16px;
+  justify-content: center;
+  background: rgb(197, 194, 194);
+}
+.container .phones .fruit .fruit-img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+.container .phones .fruit .fruit-img:hover {
+  box-shadow: 0 0 3px 1px #008ecc;
+  border: 1px solid #008ecc;
+}
+
+.end {
+  color: rgb(255, 255, 255);
+  background: rgb(0, 142, 204);
+  padding: 5% 10%;
+  align-items: center;
+  width: 100%;
+}
+.end footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 10%;
+}
+.end .footer-line {
+  width: 100%;
+  background: rgb(5, 171, 243);
+  height: 2px;
+  text-align: center;
+}
+.end .footer-line div {
+  margin: 0 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .location {
+    display: none;
+  }
+  .container nav img {
+    width: 30%;
+  }
+  .container nav .search {
+    display: none;
+  }
+  .container .category {
+    display: none;
+  }
+  .container .carousel-item {
+    height: auto;
+  }
+  .container .carousel-item img {
+    width: 100%;
+    height: auto;
+  }
+  .container .telefon {
+    gap: 5%;
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+  }
+  .container .telefon .card-phone {
+    margin-top: 5%;
+  }
+  .container .telefon .card-phone .save {
+    display: none;
+  }
+  .container .phones {
+    padding: 0 5%;
+  }
+  .container .phones .card-phone {
+    width: 45%;
+  }
+  .container .assets {
+    padding-bottom: -120vh;
+    width: 100%;
+    display: block;
+  }
+  .container .assets .store-card {
+    width: 100%;
+  }
+  .container .assets .imgs {
+    margin-top: -10vh;
+  }
+  .container .fruits {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .container .fruits .fruit {
+    width: 45%;
+  }
+  .container .fruits .fruit .fruit-img {
+    width: auto;
+    height: 140px;
+  }
+  .end {
+    height: 100%;
+    padding: 5% 5%;
+  }
+  .end footer {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .end footer .f-1 {
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+  }
+  .end footer .f-1 img {
+    width: 100%;
+  }
+  .end footer .f-1 .end-logo {
+    margin-top: 5%;
+    width: 80%;
+    margin: auto;
+  }
+  .end footer .f-1 .end-logo img {
+    width: 50%;
+  }
+  .end footer .f-2 {
+    width: 100%;
+  }
+  .end footer .f-3 {
+    width: 100%;
+  }
+}/*# sourceMappingURL=main.css.map */

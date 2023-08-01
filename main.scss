@@ -1,0 +1,397 @@
+$premury: color #008ecc;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Prompt;
+    text-decoration: none !important;
+    list-style: none;
+}
+
+.location {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    background: rgba(245, 245, 245, 1);
+    align-items: center;
+    padding: 0 5%;
+
+    p {
+        margin: auto 0;
+    }
+
+    ul {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        margin: auto 0;
+        gap: 30px;
+
+    }
+}
+
+.container {
+    nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        height: 70px;
+        align-items: center;
+
+        .search {
+            position: relative;
+            width: 40%;
+
+            input {
+                border-radius: 10px;
+                height: 48px;
+                padding: 5px 40px 5px 40px;
+                outline: none;
+                border: none;
+                width: 100%;
+                background: rgba(243, 249, 251, 1);
+
+            }
+
+            img {
+                position: absolute;
+
+                &:nth-child(1) {
+                    left: 10px;
+                    top: 30%;
+                }
+
+                &:nth-child(3) {
+                    top: 25%;
+                    right: 10px;
+                }
+            }
+        }
+
+        .actions {
+            display: flex;
+            gap: 30px;
+
+            a {
+                font-weight: 600;
+                color: #666;
+            }
+        }
+    }
+
+    .category {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        height: 50px;
+        padding: 0 !important;
+
+        justify-content: space-between;
+
+        li {
+            padding: 6px 14px;
+            transition: .5s;
+            border-radius: 30px;
+            background-color: #f3f9fb;
+
+            &:hover {
+                background: rgba(0, 142, 204, 1);
+                color: white;
+            }
+        }
+    }
+
+    .carousel-item {
+        width: 100%;
+        transition: .7;
+        height: 315px;
+        background-color: red;
+
+        img {
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .carousel-inner {
+        border-radius: 20px;
+    }
+
+    .phone-list {
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .phones {
+        margin: 70px 0;
+        width: 100%;
+
+        .title {
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+
+            h3 {
+                font-size: 24px;
+            }
+
+            span {
+                font-size: 24px;
+                color: $premury;
+            }
+        }
+
+        .line {
+            width: 100%;
+            margin: 30px 0;
+            height: 3px;
+            background-color: lightgray;
+
+            div {
+                width: 35%;
+                height: 100%;
+                background-color: #008ecc;
+                ;
+            }
+        }
+
+        .card-phone {
+            box-shadow: 0 0 1px gray;
+            width: 18%;
+            transform: .3s;
+            border-radius: 15px;
+            border: 1px solid transparent;
+
+            &:hover {
+                box-shadow: 0 5px 10px lightgray;
+                border: 1px solid
+            }
+
+            .card-img {
+                width: 100%;
+                text-align: center;
+                height: 60%;
+                position: relative;
+
+                img {
+                    object-fit: contain;
+                    width: 70%;
+                    height: 70%;
+
+                    &:nth-child(2) {
+                        position: absolute;
+                        width: 50px;
+                        height: 50px;
+                        top: 0;
+                        right: 0;
+                    }
+                }
+            }
+
+            .card-price {
+                padding: 0 15px;
+                width: 100%;
+                height: 40%;
+
+                h4 {
+                    font-size: 18px;
+                }
+            }
+        }
+
+        .circle-card {
+            text-align: center;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 30px;
+
+            img {
+                width: 130px;
+                height: 130px;
+            }
+
+            &:hover img {
+                border-radius: 50%;
+                border: 1px solid #008ecc;
+            }
+        }
+
+        .store-card {
+            align-items: center;
+            width: 30%;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        .fruit {
+            width: 15%;
+            text-align: center;
+
+            .fruit-img {
+                border: 1px soid transparent;
+                width: 100%;
+                padding: 10%;
+                transition: .5s;
+                height: 200px;
+                display: flex;
+                border-radius: 16px;
+                justify-content: center;
+                background: rgb(197, 194, 194);
+
+                img {
+                    object-fit: cover;
+                    width: 100%;
+                }
+
+                &:hover {
+                    box-shadow: 0 0 3px 1px #008ecc;
+                    border: 1px solid #008ecc;
+                }
+            }
+        }
+    }
+
+}
+
+.end {
+    color: rgba(255, 255, 255, 1);
+    background: rgba(0, 142, 204, 1);
+    padding: 5% 10%;
+    align-items: center;
+    width: 100%;
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        gap: 10%;
+    }
+
+    .footer-line {
+        width: 100%;
+        background: rgba(5, 171, 243, 1);
+        height: 2px;
+        text-align: center;
+
+        div {
+            margin: 0 20px;
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .location {
+        display: none;
+    }
+
+    .container {
+        nav {
+            img {
+                width: 30%;
+            }
+            .search {
+                display: none;
+            }
+            
+        }
+
+        .category {
+            display: none;
+        }
+
+        .carousel-item {
+            height: auto;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        .telefon {
+            gap: 5%;
+            width: 100%;
+            flex-wrap: wrap;
+            display: flex;
+            .card-phone {
+                margin-top: 5%;
+                .save {
+                    display: none;
+                }
+            }
+        }
+        .phones {
+            padding: 0 5%;
+            // gap: 2.5%;
+            .card-phone {
+                width: 45%;
+            }
+        }
+        .assets {
+            padding-bottom: -120vh;
+            width: 100%;
+            display: block;
+            .store-card {
+                width: 100%;
+            }
+            .imgs {
+                margin-top: -10vh;
+            }
+
+        }
+        .fruits {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            .fruit {
+                width: 45%;
+                .fruit-img {
+                    width: auto;
+                    height: 140px;
+                }
+            }
+        }
+    }
+    .end {
+        height: 100%;
+        padding:  5% 5%;
+        footer {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            text-align: center;
+            .f-1 {
+                justify-content: center;
+                margin: auto;
+                text-align: center;
+                img {
+                    width: 100%;
+                }
+                .end-logo {
+                    margin-top: 5%;
+                    width: 80%;
+                    margin: auto;
+                    img {
+                        width: 50%;
+                    }
+                }
+            }
+            .f-2 {
+                width: 100%;
+            }
+            .f-3 {
+                width: 100%;
+            }
+        }
+    }
+
+
+}
